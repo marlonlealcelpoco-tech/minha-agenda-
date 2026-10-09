@@ -30,3 +30,24 @@ Esta é uma primeira versão de protótipo web, não um APK Android nativo. Os d
 2. Testar os fluxos de cadastro, conflitos, trajetos e relatórios.
 3. Preparar a base Android e implementar notificações nativas.
 4. Compilar e testar o APK antes de distribuir.
+
+
+## Aplicativo Android (APK de teste)
+
+O repositório agora inclui a configuração do Capacitor e um fluxo de compilação Android.
+
+### Gerar APK pelo GitHub
+1. Abra a aba **Actions** do repositório.
+2. Selecione **Build APK Android**.
+3. Clique em **Run workflow** e confirme.
+4. Aguarde a execução terminar com sucesso.
+5. Na execução concluída, baixe o artefato **minha-agenda-apk-debug**. Dentro dele estará o arquivo `app-debug.apk`.
+6. Transfira o APK para seu Android e abra-o para instalar. Talvez seja necessário autorizar a instalação de aplicativos dessa origem nas configurações do aparelho.
+
+O workflow também tenta gerar um novo APK automaticamente quando arquivos centrais da interface ou da configuração mudam na branch `main`.
+
+### Limitações atuais
+- Este é um APK de desenvolvimento/debug, não uma versão assinada para publicação na Play Store.
+- O app empacota a interface web atual dentro de um contêiner Android; ainda não é uma implementação nativa completa.
+- Os dados ficam no armazenamento local do app/aparelho. Desinstalar o aplicativo pode remover os dados; exporte o backup disponível.
+- Notificações Android nativas, permissões, funcionamento em segundo plano, validação de conflitos em trajetos que cruzam a meia-noite e testes em aparelhos reais precisam ser concluídos antes de considerar o app pronto para uso diário.

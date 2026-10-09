@@ -1,0 +1,11 @@
+{
+  "name": "Minha Agenda",
+  "short_name": "Agenda",
+  "description": "Agenda profissional para compromissos, parceiros, trajetos e lembretes.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f8fc",
+  "theme_color": "#155eef",
+  "icons": []
+}
